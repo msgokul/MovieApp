@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<style>
+    body{
+    background-color:dark-green;
+    }
+    h1{
+    text-align:center;
+    color:red;
+    }
+</style>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+    <h2 style="color:white;"> Online Movie Store </h2>
+</nav>
+{% block body %}
+{% endblock %}
+
+</body>
+</html>

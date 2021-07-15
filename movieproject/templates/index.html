@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<style>
+    .pen{align:center;}
+</style>
+{% for i in movie_list %}
+<div class="pen">
+<img src="{{i.image.url}}" width="200" height="200">
+    {{i.id}}---> <a href="{% url 'movieapp:detail' i.id %}">{{i.name}}</a><br></div>
+{% endfor %}
+
+{% endblock %}

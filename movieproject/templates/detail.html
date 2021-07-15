@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1 style="text-align:center">{{movie.name}}</h1><br>
+<h5 style="text-align:center;color:red">{{movie.year}}</h5>  <br>
+<h5 style="text-align:center;color:red">{{movie.desc}}</h5> <br>
+<a class="btn btn-warning" style="text-align: center; " href="{% url 'movieapp:update' movie.id %}"> UPDATE</a>
+<a class="btn danger" style="text-align: center; " href="{% url 'movieapp:delete' movie.id %}"> DELETE</a>
+
+{% endblock %}
